@@ -1,0 +1,25 @@
+body{
+  background-color: #ccf2ff;
+}
+
+h1{
+  color: green;
+  text-align: center;
+}
+
+nav{
+  display: flex;
+  background-color: #b3ecff;
+}
+
+nav a {
+  background-color: #00ace6;
+  color: #b3ecff;
+  padding: 0.25em 6em;
+  margin: 0.5em;
+  transition: 0.7s;
+}
+
+nav a:hover {
+  background-color: #4dc3ff;
+}
