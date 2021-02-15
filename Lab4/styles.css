@@ -1,0 +1,62 @@
+header {
+  text-align:center;
+  color: #734d26;
+  font-family: sans-serif;
+  background-color: #d2a679;
+}
+
+body {
+  background-color: #ecd9c6;
+  text-color: black;
+  font-family: sans-serif;
+}
+
+@media screen and (min-width: 500px) {
+  #menuToggler {
+    font-size: 2em;
+    padding: 0.25 0.5em;
+
+}
+  nav {
+    display: flex;
+    flex-direction: row;
+
+  }
+}
+
+#menuToggler {
+  position: fixed;
+
+}
+
+nav {
+  display: flex;
+  transition: 0.5s;
+  opacity: 0;
+  transform: translateX(100vw);
+  position: fixed;
+  flex-direction: column;
+  background-color: #bf8040;
+  flex-basis: 15vw;
+  box-sizing: border-box;
+}
+
+nav.open {
+  /* display: flex; */
+  opacity: 1;
+  transform: translateX(0);
+}
+
+nav a {
+  background-color: #d9b38c;
+  padding: 0.25 0.5em;
+  margin: 0.5em;
+  text-decoration: none;
+  font-family: sans-serif;
+  transition: 0.5s;
+  color: black;
+}
+
+nav a:hover {
+  background-color: #e6ccb3;
+}
