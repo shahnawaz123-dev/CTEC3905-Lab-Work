@@ -16,16 +16,23 @@ body {
     font-size: 2em;
     padding: 0.25 0.5em;
 
+
 }
   nav {
     display: flex;
     flex-direction: row;
+    transform: translateX(0);
+    position: static;
 
   }
 }
 
 #menuToggler {
   position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  padding: 0.25em;
 
 }
 
@@ -33,8 +40,10 @@ nav {
   display: flex;
   transition: 0.5s;
   opacity: 0;
-  transform: translateX(100vw);
+  transform: translateX(100vh);
   position: fixed;
+  width: 100%;
+  top: 1;
   flex-direction: column;
   background-color: #bf8040;
   flex-basis: 15vw;
@@ -42,7 +51,7 @@ nav {
 }
 
 nav.open {
-  /* display: flex; */
+  display: flex;
   opacity: 1;
   transform: translateX(0);
 }
