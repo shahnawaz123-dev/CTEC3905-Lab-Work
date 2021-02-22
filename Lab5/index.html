@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Input</title>
+  </head>
+  <body>
+    <header>
+      <section id="search">
+        <input placeholder="&#128269; search" id="myQuery" aria-label="search">
+        <button id="searchButton">search</button>
+      </section>
+      <h1>Lab 5 User Input</h1>
+    </header>
+    <main>
+      <section>
+        <h2>Basic Input</h2>
+        <label for="myName">Enter your name:</label>
+        <input type="text" id="myName">
+      </section>
+      <section>
+        <label>Colour</label>
+        <input type="color" value="#ff0000">
+      </section>
+      <section>
+        <label>Date</label>
+        <input type="date" value="2021-01-01">
+      </section>
+      <section>
+        <h2>Numbers</h2>
+        <label for="myAge">Enter your Age</label>
+        <input id="myAge" type="number" max="150">
+      </section>
+    </main>
+    <script src="scripts.js"></script>
+  </body>
+</html>
