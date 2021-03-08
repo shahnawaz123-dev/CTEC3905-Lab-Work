@@ -11,7 +11,7 @@ body {
   font-family: sans-serif;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 515px) {
   #menuToggler {
     font-size: 2em;
     padding: 0.25 0.5em;
@@ -22,6 +22,7 @@ body {
     display: flex;
     flex-direction: row;
     transform: translateX(0);
+    opacity: 1;
     position: static;
 
   }
@@ -29,10 +30,12 @@ body {
 
 #menuToggler {
   position: fixed;
-  top: 0;
-  right: 0;
+  top: 0.5rem;
+  right: 0.5rem;
   z-index: 1;
-  padding: 0.25em;
+  padding: 0.1rem;
+  font-size: 3em;
+  line-height: 1em;
 
 }
 
@@ -40,27 +43,29 @@ nav {
   display: flex;
   transition: 0.5s;
   opacity: 0;
-  transform: translateX(100vh);
+  transform: translateY(100vh);
   position: fixed;
-  width: 100%;
-  top: 1;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
   flex-direction: column;
   background-color: #bf8040;
-  flex-basis: 15vw;
-  box-sizing: border-box;
+  /* flex-basis: 15vw; */
+  /* box-sizing: border-box; */
 }
 
 nav.open {
   display: flex;
   opacity: 1;
-  transform: translateX(0);
+  transform: none;
 }
 
 nav a {
-  background-color: #d9b38c;
+  /* background-color: #d9b38c; */
   padding: 0.25 0.5em;
   margin: 0.5em;
   text-decoration: none;
+  text-align: center;
   font-family: sans-serif;
   transition: 0.5s;
   color: black;
