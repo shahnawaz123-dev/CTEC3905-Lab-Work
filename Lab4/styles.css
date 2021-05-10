@@ -50,8 +50,8 @@ nav {
   top: 0;
   flex-direction: column;
   background-color: #bf8040;
-  /* flex-basis: 15vw; */
-  /* box-sizing: border-box; */
+  flex-basis: 15vw;
+  box-sizing: border-box;
 }
 
 nav.open {
